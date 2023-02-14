@@ -9,8 +9,7 @@ public class RomanCalculator : ICalulator<string, string>
     {
         try
         {
-            var da = RomanGrammar.ParseCondition(input);
-            return da.Compile()().ToString();
+            return RomanGrammar.ParseCondition(input).Compile()().ToString();
         }
 
         catch (Sprache.ParseException)

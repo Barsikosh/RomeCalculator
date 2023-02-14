@@ -1,6 +1,6 @@
-﻿namespace RomeCalculator;
+﻿namespace RomeCalculator.Calculator;
 
-internal interface ICalulator <in TInput, out TOutput>
+public interface ICalulator <in TInput, out TOutput>
 {
     public TOutput Evaluate(TInput input);
 }

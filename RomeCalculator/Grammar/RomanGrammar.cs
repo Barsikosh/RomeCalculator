@@ -10,7 +10,7 @@ internal static class RomanGrammar
         => Lambda.Parse(text);
 
     private static readonly Parser<RomeNumberEntity> INumber =
-        Parse.IgnoreCase("i").Once().Return(new RomeNumberEntity("I"));
+        Parse.IgnoreCase("I").Once().Return(new RomeNumberEntity("I"));
 
     private static readonly Parser<RomeNumberEntity> VNumber =
         Parse.IgnoreCase("V").Once().Return(new RomeNumberEntity("V"));
@@ -46,7 +46,7 @@ internal static class RomanGrammar
     private static readonly Parser<ExpressionType> PlusAndSubtractOp = MakeOperator("+", ExpressionType.Add)
         .Or(MakeOperator("-", ExpressionType.Subtract));
 
-    static Parser<Expression> MultiplyTerm =>
+    private static Parser<Expression> MultiplyTerm =>
         Parse.ChainOperator(OpMultiply, Factor, Expression.MakeBinary);
 
     private static readonly Parser<ExpressionType> OpMultiply = MakeOperator("*", ExpressionType.Multiply);
@@ -61,6 +61,6 @@ internal static class RomanGrammar
         from rparen in Parse.Char(')').Token()
         select expr;
 
-    static Parser<ExpressionType> MakeOperator(string token, ExpressionType type)
+    private static Parser<ExpressionType> MakeOperator(string token, ExpressionType type)
         => Parse.IgnoreCase(token).Token().Return(type);
 }
