@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomeCalculator", "RomeCalculator\RomeCalculator.csproj", "{CC221E26-6A0A-4278-9CC5-F144EF9D23A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomeCalculatorTest", "RomeCalculatorTest\RomeCalculatorTest.csproj", "{FADDC6DF-1521-404A-B096-F29D030CFBC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC221E26-6A0A-4278-9CC5-F144EF9D23A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC221E26-6A0A-4278-9CC5-F144EF9D23A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC221E26-6A0A-4278-9CC5-F144EF9D23A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC221E26-6A0A-4278-9CC5-F144EF9D23A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADDC6DF-1521-404A-B096-F29D030CFBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADDC6DF-1521-404A-B096-F29D030CFBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADDC6DF-1521-404A-B096-F29D030CFBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADDC6DF-1521-404A-B096-F29D030CFBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
